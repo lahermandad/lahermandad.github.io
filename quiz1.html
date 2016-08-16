@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="La Hermandad. Una serie original de Claro Video. Quiz">
+	<meta name="author" content="CTIN">
+	<meta property="og:url"                content="https://apps.facebook.com/725806384225748/" />
+	<meta property="og:type"               content="game.achievement" />
+	<meta property="og:title"              content="La Hermandad. Conoce que tan maquiavélico eres" />
+	<meta property="og:image"              content="https://ulisesprede.github.io/assets/pictures/NoSeQuien.jpg" />
+	<meta property="og:description"        content="La Hermandad. Conoce que tan maquiavélico eres y descrubre la nueva serie original de Claro Video" />
+	<meta property="fb:app_id"             content="725806384225748" />
+	<title>La Hermandad QUIZ</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<script src="js/jquery-3.1.0.min.js"></script>
+
+<script>
+
+function cambiar_div(origen,destino){
+	$(destino).fadeIn(3000);
+	$(origen).fadeOut(3000);
+}
+
+$( document ).ready(function() {
+    setTimeout(function() {
+		$('#txt_titulo').fadeIn(1000);
+    }, 500);
+    setTimeout(function() {
+		$('#txt_titulo').fadeOut(1000);
+ 	   }, 3000);
+    setTimeout(function() {
+		$('#txt_frase').fadeIn(2000);
+    }, 4000);
+    setTimeout(function() {
+		cambiar_div('#div_main','#div_intro');
+    }, 6000);
+});
+
+</script>
+
+</head>
+<body>
+<audio autoplay loop id="player">
+	<source src="aud/Crypto.mp3" type="audio/mpeg">
+</audio>
+
+<div id="div_main" style="display:block;" >
+	<div class="div_pic" style="background-image:url('pic/q1_title.gif');"></div>
+	<span class="txt_mid_center" id="txt_titulo">Conoce que tan maquiavelico eres</span>
+	<span class="txt_mid_center" id="txt_frase">Todavía escucho las voces que no oí</span>
+</div>
+
+<!-- Pregunta 1 -->
+<div class="div_main" id="div_intro">
+	<div class="div_pic" style="background-image:url('pic/q1_intro.gif');"></div>
+	<div class="txt_top_left">
+		<h2>Al encontrarte en un situación de peligro, ¿Cuál crees que sería tu primer reacción?</h2>
+		<div class="opc_div" onclick="cambiar_div('#div_intro','#div_a');">
+			<a href="#div_a">
+				<p>Pedir ayuda</p>
+			</a>
+		</div>
+		<div class="opc_div" onclick="cambiar_div('#div_intro','#div_b');">
+			<a href="#div_b">
+				<p>Salir corriendo</p>
+			</a>
+		</div>
+		<div class="opc_div" onclick="cambiar_div('#div_intro','#div_c');">
+			<a href="#div_c">
+				<p>Afrontar la situación</p>
+			</a>
+		</div>
+	</div>
+</div>
+
+<!-- a -->
+<div class="div_main" id="div_a">
+	<div class="div_pic" style="background-image:url('pic/q1_a.gif');"></div>
+	<div class="txt_bot_left">
+		<h2>¿Olvidas con facilidad a alguien que te ha hecho daño?</h2>
+		<div class="opc_div" onclick="cambiar_div('#div_a','#div_aa');">
+			<a href="#div_aa">
+				<p>Si, no soy rencoroso</p>
+			</a>
+		</div>
+		<div class="opc_div" onclick="cambiar_div('#div_a','#div_ab');">
+			<a href="#div_ab">
+				<p>Si, el tiempo cobra todo</p>
+			</a>
+		</div>
+		<div class="opc_div" onclick="cambiar_div('#div_a','#div_ac');">
+			<a href="#div_ac">
+				<p>No, busco venganza</p>
+			</a>
+		</div>
+	</div>
+</div>
+
+	<!-- aa -->
+	<div class="div_main" id="div_aa">
+		<div class="div_pic" style="background-image:url('pic/q1_aa.gif');"></div>
+		<div class="txt_top_left">
+			<h2>¿Te enfadas con facilidad cuando alguien entorpece tus actividades?</h2>
+			<div class="opc_div" onclick="cambiar_div('#div_aa','#div_sit1');">
+				<a href="#div_sit1">
+					<p>Solo si es importante</p>
+				</a>
+			</div>
+			<div class="opc_div" onclick="cambiar_div('#div_aa','#div_sit1');">
+				<a href="#div_sit1">
+					<p>No, evito los problemas</p>
+				</a>
+			</div>
+		</div>
+	</div>
+
+
+		<!-- sit1 -->
+		<div class="div_main" id="div_sit1">
+			<div class="div_pic" style="background-image:url('pic/q1_sit1.gif');"></div>
+			<div class="txt_situacion">
+				<h2>Imagínate que te encuentras en un bosque. Caminas por él durante un tiempo, mientras observas el paisaje. No tienes miedo, estás relajado, te sientes a gusto paseando y observando su belleza.</h2>
+				<h2>Estás preparado para regresar a tu hogar. Sin embargo, repentinamente, te ves de frente con un gran oso que te impide el paso.</h2>
+				<h2>¿Qué haces para librarte del oso?</h2>
+				<div class="opc_div">
+					<a href="luisa.html">
+						<p>Intentas tranquilizar al oso y controlarlo</p>
+					</a>
+				</div>
+				<div class="opc_div">
+					<a href="milena.html">
+						<p>Huyes corriendo sin mirar atrás</p>
+					</a>
+				</div>
+			</div>
+		</div>
+
+	<!-- ab -->
+	<div class="div_main" id="div_ab">
+		<div class="div_pic" style="background-image:url('pic/q1_ab.gif');"></div>
+		<div class="txt_top_left">
+			<h2>¿Trabajas duro, juegas duro y tratas de ser el mejor en lo que haces?</h2>
+			<div class="opc_div" onclick="cambiar_div('#div_ab','#div_sit2');">
+				<a href="#div_sit2">
+					<p>Si, me gusta ser el mejor</p>
+				</a>
+			</div>
+			<div class="opc_div" onclick="cambiar_div('#div_ab','#div_sit2');">
+				<a href="#div_sit2">
+					<p>No, todo me da igual</p>
+				</a>
+			</div>
+		</div>
+	</div>
+
+		<!-- sit2 -->
+		<div class="div_main" id="div_sit2">
+			<div class="div_pic" style="background-image:url('pic/q1_sit2.gif');"></div>
+			<div class="txt_situacion">
+				<h2>Imagínate que te encuentras en un bosque. Caminas por él durante un tiempo, mientras observas el paisaje. No tienes miedo, estás relajado, te sientes a gusto paseando y observando su belleza.</h2>
+				<h2>Estás preparado para regresar a tu hogar. Sin embargo, repentinamente, te ves de frente con un gran oso que te impide el paso.</h2>
+				<h2>¿Qué haces para librarte del oso?</h2>
+				<div class="opc_div">
+					<a href="pedro.html">
+						<p>Te subes a un árbol cercano</p>
+					</a>
+				</div>
+				<div class="opc_div">
+					<a href="milena.html">
+						<p>Huyes corriendo sin mirar atrás</p>
+					</a>
+				</div>
+			</div>
+		</div>
+
+	<!-- ac -->
+	<div class="div_main" id="div_ac">
+		<div class="div_pic" style="background-image:url('pic/q1_ac.gif');"></div>
+		<div class="txt_top_left">
+			<h2>¿Cuándo te enojas te aceleras y realizas actos sin pensar en las consecuencias?</h2>
+			<div class="opc_div" onclick="cambiar_div('#div_ac','#div_sit3');">
+				<a href="#div_sit3">
+					<p>Si, soy impulsivo</p>
+				</a>
+			</div>
+			<div class="opc_div" onclick="cambiar_div('#div_ac','#div_sit3');">
+				<a href="#div_sit3">
+					<p>No, me caracterizo por ser paciente</p>
+				</a>
+			</div>
+		</div>
+	</div>
+
+		<!-- sit3 -->
+		<div class="div_main" id="div_sit3">
+			<div class="div_pic" style="background-image:url('pic/q1_sit3.gif');"></div>
+			<div class="txt_situacion">
+				<h2>Imagínate que te encuentras en un bosque. Caminas por él durante un tiempo, mientras observas el paisaje. No tienes miedo, estás relajado, te sientes a gusto paseando y observando su belleza.</h2>
+				<h2>Ahora decides seguir tu paseo. Pero resulta que en tu camino te encuentras con obstáculo inesperado, un muro.</h2>
+				<h2>¿Cómo crees que podrás pasar el muro?</h2>
+				<div class="opc_div">
+					<a href="pedro.html">
+						<p>Cavando un túnel</p>
+					</a>
+				</div>
+				<div class="opc_div">
+					<a href="julio.html">
+						<p>Saltándolo</p>
+					</a>
+				</div>
+			</div>
+		</div>
+
+<!-- b -->
+<div class="div_main" id="div_b">
+	<div class="div_pic" style="background-image:url('pic/q1_b.gif');"></div>
+	<div class="txt_bot_left">
+		<h2>¿Te consideras ambicioso?</h2>
+		<div class="opc_div" onclick="cambiar_div('#div_b','#div_ba');">
+			<a href="#div_ba">
+				<p>Me gusta tener lo mejor</p>
+			</a>
+		</div>
+		<div class="opc_div" onclick="cambiar_div('#div_b','#div_bb');">
+			<a href="#div_bb">
+				<p>Me conformo con lo que tengo</p>
+			</a>
+		</div>
+	</div>
+</div>
+
+	<!-- ba -->
+	<div class="div_main" id="div_ba">
+		<div class="div_pic" style="background-image:url('pic/q1_ba.gif');"></div>
+		<div class="txt_top_left">
+			<h2>¿Te sientes bastante impaciente cuando tienes que esperar resultados?</h2>
+			<div class="opc_div" onclick="cambiar_div('#div_ba','#div_sit4');">
+				<a href="#div_sit4">
+					<p>Si, mi ritmo de vida es acelerado</p>
+				</a>
+			</div>
+			<div class="opc_div" onclick="cambiar_div('#div_ba','#div_sit4');">
+				<a href="#div_sit4">
+					<p>No, me caracterizo por ser paciente</p>
+				</a>
+			</div>
+		</div>
+	</div>
+
+		<!-- sit4 -->
+		<div class="div_main" id="div_sit4">
+			<div class="div_pic" style="background-image:url('pic/q1_sit4.gif');"></div>
+			<div class="txt_situacion">
+				<h2>Imagínate que te encuentras en un bosque. Caminas por él durante un tiempo, mientras observas el paisaje. No tienes miedo, estás relajado, te sientes a gusto paseando y observando su belleza.</h2>
+				<h2>Ahora decides seguir tu paseo. Pero resulta que en tu camino te encuentras con obstáculo inesperado, un muro.</h2>
+				<h2>¿Cómo crees que podrás pasar el muro?</h2>
+				<div class="opc_div">
+					<a href="milena.html">
+						<p>Rodeándolo</p>
+					</a>
+				</div>
+				<div class="opc_div">
+					<a href="julio.html">
+						<p>Saltándolo</p>
+					</a>
+				</div>
+			</div>
+		</div>
+
+	<!-- bb -->
+	<div class="div_main" id="div_bb">
+		<div class="div_pic" style="background-image:url('pic/q1_bb.gif');"></div>
+		<div class="txt_top_left">
+			<h2>¿Te enfadas cuando fracasas en cosas que intentas hacer?</h2>
+			<div class="opc_div" onclick="cambiar_div('#div_bb','#div_sit5');">
+				<a href="#div_sit5">
+					<p>Si me enfado</p>
+				</a>
+			</div>
+			<div class="opc_div" onclick="cambiar_div('#div_bb','#div_sit5');">
+				<a href="#div_sit5">
+					<p>No, lo dejo pasar</p>
+				</a>
+			</div>
+		</div>
+	</div>
+
+		<!-- sit5 -->
+		<div class="div_main" id="div_sit5">
+			<div class="div_pic" style="background-image:url('pic/q1_sit5.gif');"></div>
+			<div class="txt_situacion">
+				<h2>Imagínate que te encuentras en un bosque. Caminas por él durante un tiempo, mientras observas el paisaje. No tienes miedo, estás relajado, te sientes a gusto paseando y observando su belleza.</h2>
+				<h2>Estás preparado para regresar a tu hogar. Sin embargo, repentinamente, te ves de frente con un gran oso que te impide el paso.</h2>
+				<h2>¿Qué haces para librarte del oso?</h2>
+				<div class="opc_div">
+					<a href="luisa.html">
+						<p>Intentas tranquilizar al oso y controlarlo</p>
+					</a>
+				</div>
+				<div class="opc_div">
+					<a href="milena.html">
+						<p>Huyes corriendo sin mirar atrás</p>
+					</a>
+				</div>
+			</div>
+		</div>
+
+<!-- c -->
+<div class="div_main" id="div_c">
+	<div class="div_pic" style="background-image:url('pic/q1_c.gif');"></div>
+	<div class="txt_bot_left">
+		<h2>¿Trabajas duro, juegas duro y tratas de ser el mejor en lo que haces?</h2>
+		<div class="opc_div" onclick="cambiar_div('#div_c','#div_ca');">
+			<a href="#div_ca">
+				<p>Si, me gusta ser el mejor</p>
+			</a>
+		</div>
+		<div class="opc_div" onclick="cambiar_div('#div_c','#div_cb');">
+			<a href="#div_cb">
+				<p>No, me hes indifetente</p>
+			</a>
+		</div>
+	</div>
+</div>
+
+	<!-- ca -->
+	<div class="div_main" id="div_ca">
+		<div class="div_pic" style="background-image:url('pic/q1_ca.gif');"></div>
+		<div class="txt_top_left">
+			<h2>¿Cuándo te enojas te aceleras y realizas actos sin pensar en las consecuencias?</h2>
+			<div class="opc_div" onclick="cambiar_div('#div_ca','#div_sit6');">
+				<a href="#div_sit6">
+					<p>Si, soy impulsivo</p>
+				</a>
+			</div>
+			<div class="opc_div" onclick="cambiar_div('#div_ca','#div_sit6');">
+				<a href="#div_sit6">
+					<p>No, me caracterizo por ser paciente</p>
+				</a>
+			</div>
+		</div>
+	</div>
+
+		<!-- sit6 -->
+		<div class="div_main" id="div_sit6">
+			<div class="div_pic" style="background-image:url('pic/q1_sit6.gif');"></div>
+			<div class="txt_situacion">
+				<h2>Imagínate que te encuentras en un bosque. Caminas por él durante un tiempo, mientras observas el paisaje. No tienes miedo, estás relajado, te sientes a gusto paseando y observando su belleza.</h2>
+				<h2>Imagínate que te encuentras en un bosque. Caminas por él durante un tiempo, mientras observas el paisaje. No tienes miedo, estás relajado, te sientes a gusto paseando y observando su belleza. Al cabo de un buen rato de paseo, encuentras una casa en un claro.</h2>
+				<h2>¿Cómo te imaginas que es la casa?</h2>
+				<div class="opc_div">
+					<a href="pedro.html">
+						<p>Es una casa grande y lujosa, como un palacio</p>
+					</a>
+				</div>
+				<div class="opc_div">
+					<a href="luisa.html">
+						<p>Es una pequeña casita de madera</p>
+					</a>
+				</div>
+			</div>
+		</div>
+
+	<!-- cb -->
+	<div class="div_main" id="div_cb">
+		<div class="div_pic" style="background-image:url('pic/q1_cb.gif');"></div>
+		<div class="txt_top_left">
+			<h2>¿Olvidas con facilidad a alguien que te ha hecho daño?</h2>
+			<div class="opc_div" onclick="cambiar_div('#div_bb','#div_sit7');">
+				<a href="#div_sit7">
+					<p>No soy rencoroso</p>
+				</a>
+			</div>
+			<div class="opc_div" onclick="cambiar_div('#div_bb','#div_sit7');">
+				<a href="#div_sit7">
+					<p>Busco venganza</p>
+				</a>
+			</div>
+		</div>
+	</div>
+
+		<!-- sit7 -->
+		<div class="div_main" id="div_sit7">
+			<div class="div_pic" style="background-image:url('pic/q1_sit7.gif');"></div>
+			<div class="txt_situacion">
+				<h2>Imagínate que te encuentras en un bosque. Caminas por él durante un tiempo, mientras observas el paisaje. No tienes miedo, estás relajado, te sientes a gusto paseando y observando su belleza.</h2>
+				<h2>Imagínate que te encuentras en un bosque. Caminas por él durante un tiempo, mientras observas el paisaje. No tienes miedo, estás relajado, te sientes a gusto paseando y observando su belleza. Al cabo de un buen rato de paseo, encuentras una casa en un claro.</h2>
+				<h2>¿Cómo te imaginas que es la casa?</h2>
+				<div class="opc_div">
+					<a href="julio.html">
+						<p>Es una casa grande y lujosa, como un palacio</p>
+					</a>
+				</div>
+				<div class="opc_div">
+					<a href="luisa.html">
+						<p>Es una pequeña casita de madera</p>
+					</a>
+				</div>
+			</div>
+		</div>
+
+
+<p class="creditos">Crypto Kevin MacLeod (incompetech.com)<br>
+Licensed under Creative Commons: By Attribution 3.0 License<br>
+http://creativecommons.org/licenses/by/3.0/</p>
+</body>

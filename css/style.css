@@ -1,0 +1,128 @@
+@font-face {
+  font-family: DKpoisonIvy;
+  src: url(../fts/DK_Poison_Ivy.otf);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  margin: 0;
+  color: white;
+  background-color: black;
+  font-family: DKpoisonIvy;
+  font-size: 2rem;
+  font-smoothing: antialiased;
+  text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+div {
+  display: block;
+}
+
+.div_index {
+  width: 100%;
+  height: auto;
+  position: all;
+}
+
+.div_main, .div_pic {
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.div_main {	
+  display:none;
+}
+
+.txt_mid_center {
+  width: 100%;
+  height: 12rem;
+  text-align: center;
+  margin-top: 150px;
+  font-size: 10rem;
+  font-weight: bold;
+  position: absolute;
+  z-index:1;
+}
+
+h2 {
+  font-size: 2.75rem;
+  font-weight: bold;
+}
+
+.txt_top_left, .txt_mid_left, .txt_bot_left {
+  position: absolute;
+  font-size: 2rem;
+  padding-left: 25px;
+}
+
+.txt_mid_left {
+  margin: 150px 0px 0px 50px;
+  width: 40%;
+  height: 50%;
+  text-align: left;
+}
+
+.txt_top_left {
+  margin: 50px 0px 0px 50px;
+  width: 40%;
+  height: 50%;
+  text-align: left;
+}
+
+.txt_bot_left {
+  margin: 250px 0px 0px 50px;
+  width: 40%;
+  height: 50%;
+  text-align: left;
+}
+
+.txt_situacion {
+  margin: 50px 0px 0px 50px;
+  padding: 5px 25px 25px 25px;
+  width: 80%;
+  height: 70%;
+  text-align: left;
+  font-size: 1.75rem;  
+}
+.txt_situacion>h2{
+  font-size: 2rem;  
+}
+
+.txt_personaje {
+  margin: 50px 0px 0px 50px;
+  padding: 25px 25px 25px 25px;
+  width: 30%;
+  height: 80%;
+  text-align: left;
+  background: black;
+  display: inline-block;
+  background-color: rgba(0,0,0,0.25);
+}
+
+.opc_div {
+  padding-left: 25px;
+}
+
+.opc_div:hover {
+  background-color: black;
+}
+
+#txt_titulo, #txt_frase
+{
+	display: none;
+}
+
+.creditos {
+	text-align: center;
+	font: bold 8px Arial, helvetica, sans-serif;
+	font-size: 10px;
+	display: none;
+}
