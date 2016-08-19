@@ -7,7 +7,7 @@
 	<meta property="og:url"                content="https://apps.facebook.com/725806384225748/" />
 	<meta property="og:type"               content="game.achievement" />
 	<meta property="og:title"              content="La Hermandad. Yo soy como Milena y tu, ¿conoces cómo es tu personalidad?" />
-	<meta property="og:image"              content="https://ulisesprede.github.io/pic/q1_luisa.jpg" />
+	<meta property="og:image"              content="https://lahermandad.github.io/pic/q1_luisa.jpg" />
 	<meta property="og:description"        content="La Hermandad. Yo soy como Milena y tu, ¿conoces cómo es tu personalidad?" />
 	<meta property="fb:app_id"             content="725806384225748" />
 	<title>La Hermandad QUIZ</title>
@@ -29,14 +29,16 @@ $( document ).ready(function() {
 </audio>
 
 <div class="div_main" id="div_main">
-	<div class="div_pic" style="background-image:url('pic/q1_milena.gif');"></div>
+	<div class="div_pic" style="background-image:url('pic/logoFull.gif');"></div>
 	<div class="txt_personaje">
-		<div style="text-align: center;"><img src="pic/q1_milena.jpg" width="100%" height="auto"></div><br>
+		<img src="pic/q1_milena.jpg" width="100%" height="auto">
+		<img src="pic/q1_milena.gif" width="100%" height="auto">
+	</div>
+	<div class="txt_personaje">
 		<span>Podrías ser como Milena, una persona soñadora que
 			por mucho tiempo ha idealizado una realidad
 			diferente, pero al no poder lograrlo se empeña en
 			fantasear con un mundo ideal.</span>
-
 		<span>Eres una persona cautivadora, te gusta sentirte deseable,
 			pues sabes el impacto que provocas con tan solo aparecer
 			en el lugar adecuado. Eres romántico y tu mayor sueño es
@@ -45,6 +47,14 @@ $( document ).ready(function() {
 			que tienes y cómo usarlo a tu favor. Tu mayor miedo es no
 			hacer realidad tus sueños.</span>
 
+			<script>(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.7&appId=725806384225748";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
+			<div class="fb-share-button" data-href="https://lahermandad.github.io/" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flahermandad.github.io%2F&amp;src=sdkpreparse">Compartir</a></div>
 	</div>
 </div>
 
