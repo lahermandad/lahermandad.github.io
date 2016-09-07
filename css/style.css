@@ -155,3 +155,18 @@ h2 {
   position: absolute;
   z-index: 1;
 }
+.btn-mas {  
+  border-radius: 4px; 
+  white-space: nowrap;
+    font-size: 1.5rem;
+    height: 28px;
+    width: 96px
+    padding: 0 4px 0 6px;
+    background: #b61d23;
+    color: #fff;
+    cursor: pointer;
+    font-family: Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    -webkit-user-select: none;
+}
