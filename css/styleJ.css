@@ -1,0 +1,73 @@
+*{
+	box-sizing: border-box;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	height: 100%;
+	width: 100%;
+	background-image: url(../pic/q1_julio.gif);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #000;
+	background-attachment: fixed;
+}
+
+/*@font-face {
+  font-family: DKpoisonIvy;
+  src: url(../fts/DK_Poison_Ivy.otf);
+}*/
+
+h1{
+	color: #d95350;
+}
+
+.div-text-container{
+	margin: 0px;
+	padding: 0px;
+}
+
+.descripcion-quiz-container{
+	overflow: hidden;
+}
+
+.descripcion-quiz{
+	color: #fff;
+	font-family: 'Eagle book';
+	background-color: #000;
+	border-radius: 1%;
+	/* Clases adicionales */
+	width: 400px;
+	float: right;
+	padding: 20px;
+	margin: 20px;
+	background-color: rgba(0,0,0, 0.5);
+	overflow: hidden;
+}
+
+@media only screen and (max-width: 768px)
+{
+	.descripcion-quiz{
+		float: none;
+		width: auto;
+		margin-top: 50vh;
+	}
+}
+
+.actions-quiz{
+	padding: 20px 0px;
+}
+
+.fb-share-button{
+	background-color: #3b5998;
+
+}
+
+.btn-claro{
+
+	background-color: #d95350;
+}
