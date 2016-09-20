@@ -5,7 +5,7 @@
 	<meta name="description" content="La Hermandad. Una serie original de Claro Video. Quiz">
 	<meta name="author" content="CTIN">
 	<meta property="og:url"                content="https://apps.facebook.com/725806384225748/" />
-	<meta property="og:type" content="game.achievement" />
+	<meta property="og:type" content="game" />
 	<meta property="og:title" content="Soy como Luisa de La Hermandad y tu ¿conoces cómo es tu personalidad?" />
 	<meta property="og:image" content="https://lahermandad.github.io/pic/q1_luisa.jpg" />
 	<meta property="og:description" content="Soy una persona valiente, leal y noble. Sería capaz de poder combatir la corrupción en altas esferas de la política." />
@@ -20,13 +20,27 @@
 		});
 	</script>-->
 	</head>
+
+
+
 	<body>
+		<!-- FACEBOOK -->
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.7";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		<!-- /FACEBOOK -->
+
 		<audio autoplay loop id="player">
 			<source src="aud/Theme.mp3" type="audio/mpeg">
 		</audio>
 		<div class="container-fluid">
 			<div class="row">
-				
+
 			</div>
 			<div class="row">
 				<div class="col-sm-12 descripcion-quiz-container">
@@ -39,11 +53,11 @@
 							Asuntos Internos, al ser una persona implacable,
 							valiente y fiel creyente de la honestidad del sistema.
 						</p>
-						<p> 
-							Eres una persona seria, con un elevado sentido de justicia, muy analítica y cuando te pones un objetivo, no descansas hasta conseguirlo, pues no te permites fracasar. 
+						<p>
+							Eres una persona seria, con un elevado sentido de justicia, muy analítica y cuando te pones un objetivo, no descansas hasta conseguirlo, pues no te permites fracasar.
 						</p>
 						<p>
-							Eres leal tanto a tus amigos como a tus principios, lo que te hace una persona recta y transparente. Serías capaz de combatir la corrupción en las altas esferas políticas. 
+							Eres leal tanto a tus amigos como a tus principios, lo que te hace una persona recta y transparente. Serías capaz de combatir la corrupción en las altas esferas políticas.
 						</p>
 						<p>
 							En algunas ocasiones puedes llegar a ponerte una coraza, pero eres
@@ -51,10 +65,17 @@
 						 </p>
 						 <div class="actions-quiz">
 						 	<div class="col-xs-6">
-						 		<button class="btn btn-block fb-share-button">Compartir</button>
+						 		<!-- <button class="btn btn-block fb-share-button">Compartir</button>-->
+								<button class="btn btn-block fb-share-button">
+									<div class="fb-share-button" data-href="https://lahermandad.github.io/" data-layout="icon" data-mobile-iframe="true">
+										<a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flahermandad.github.io%2F&amp;src=sdkpreparse">
+											<img src="pic\facebook26x26.png">
+										</a>
+									</div>
+								</button>
 						 	</div>
 						 	<div class="col-xs-6">
-						 		<button class="btn btn-block btn-claro">Ver más</button>
+						 		<button class="btn btn-block btn-claro"><a href="http://lahermandad.clarovideo.com/">Ver más</a></button>
 						 	</div>
 						 </div>
 					</div>

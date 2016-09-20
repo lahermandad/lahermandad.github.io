@@ -1,57 +1,75 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
+	<head>
+		<meta charset="UTF-8">
 	<meta name="description" content="La Hermandad. Una serie original de Claro Video. Quiz">
 	<meta name="author" content="CTIN">
-	<meta property="og:url"                content="https://apps.facebook.com/725806384225748/" />
-	<meta property="og:type"               content="game.achievement" />
-	<meta property="og:title"              content="Soy como Pedro de La Hermandad y tu ¿conoces cómo es tu personalidad?" />
-	<meta property="og:image"              content="https://lahermandad.github.io/pic/q1_pedro.jpg"  />
-	<meta property="og:description"        content="Soy una persona astuta y de gran inteligencia, capaz de cuidar con gran afición lo que amo, pero cuidado con los que se metan en mi camino." />
-	<meta property="fb:app_id"             content="725806384225748" />
+	<meta property="og:title"		content="Soy como Pedro de La Hermandad y tu ¿conoces cómo es tu personalidad?" />
+	<meta property="og:url"     content="https://lahermandad.github.io/" />
+	<meta property="og:image"		content="https://lahermandad.github.io/pic/q1_pedro.jpg" />
+	<meta property="og:description" content="Soy una persona astuta y de gran inteligencia, capaz de cuidar con gran afición lo que amo, pero cuidado con los que se metan en mi camino." />
+	<meta property="og:type"               content="game" />
 	<title>La Hermandad QUIZ</title>
-	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link  rel="stylesheet" type="text/css" href="css/styleP.css">
 	<script src="js/jquery-3.1.0.min.js"></script>
-
-<script>
-
-$( document ).ready(function() {
-	$('#div_main').fadeIn(3000);
-});
-
-</script>
-
-</head>
-<body>
-<audio autoplay loop id="player">
-	<source src="aud/Theme.mp3" type="audio/mpeg">
-</audio>
-
-<div class="div_main" id="div_main">
-	<div class="div_pic" style="background-image:url('pic/q1_pedro.gif');"></div>
-	<div class="txt_personaje">
-		<div style="text-align: center;"><img src="pic/q1_pedro.jpg" width="100%" height="auto"></div><br>
-		<span>Podrías ser como Pedro, una persona totalmente
-			oscura e impenetrable, un salvaje consumido por un
-			odio extremo contra el mundo.</span>
-		<span>Eres una persona astuta y de gran inteligencia. Logras
-			despertar sentimientos opuestos: amor y odio, placer y asco.
-			No te gusta ver sufrir a la gente, pero siempre antepones tus
-			intereses. Cuando realmente quieres a alguien te preocupas
-			por su bienestar y lo procuras; pero cuidado con los que se
-			metan en tu camino, porque entonces te enfocarás en
-			terminar con ellos.</span>
+	</head>
+	<body>
+		<div id="fb-root"></div>
 		<script>(function(d, s, id) {
-		  var js, fjs = d.getElementsByTagName(s)[0];
-		  if (d.getElementById(id)) return;
-		  js = d.createElement(s); js.id = id;
-		  js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.7&appId=725806384225748";
-		  fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));</script>
-		<div class="fb-share-button" data-href="https://lahermandad.github.io/" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flahermandad.github.io%2F&amp;src=sdkpreparse">Compartir</a></div>
-		<div class="btn-mas"><a href="http://lahermandad.clarovideo.com/">Ver Más...</a></div>
-	</div>
-</div>
+  		var js, fjs = d.getElementsByTagName(s)[0];
+  		if (d.getElementById(id)) return;
+  		js = d.createElement(s); js.id = id;
+  		js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.7";
+  		fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
 
-</body>
+		<audio autoplay loop id="player">
+			<source src="aud/Theme.mp3" type="audio/mpeg">
+		</audio>
+		<div class="container-fluid">
+			<div class="row">
+
+			</div>
+			<div class="row">
+				<div class="col-sm-12 descripcion-quiz-container">
+					<div class="descripcion-quiz">
+						<div class="col-sm-12">
+					<h1 class="titulo-principal text-center">Serías Pedro</h1>
+				</div>
+						<p>
+							Eres una persona totalmente
+								oscura e impenetrable, un salvaje consumido por un
+								odio extremo contra el mundo.
+						</p>
+						<p>
+							Eres una persona astuta y de gran inteligencia. Logras
+							despertar sentimientos opuestos: amor y odio, placer y asco.
+						</p>
+						<p>
+							No te gusta ver sufrir a la gente, pero siempre antepones tus
+							intereses. Cuando realmente quieres a alguien te preocupas
+							por su bienestar y lo procuras; pero cuidado con los que se
+							metan en tu camino, porque entonces te enfocarás en
+							terminar con ellos.
+							</p>
+
+						 <div class="actions-quiz">
+						 	<div class="col-xs-6">
+						 		<button class="btn btn-block fb-share-button">
+									<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flahermandad.github.io%2F&amp;src=sdkpreparse">
+										<img src="pic\facebook26x26.png">
+									</a>
+
+								</button>
+						 	</div>
+						 	<div class="col-xs-6">
+						 		<button class="btn btn-block btn-claro"><a href="http://lahermandad.clarovideo.com/">Ver más</a></button>
+						 	</div>
+						 </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
