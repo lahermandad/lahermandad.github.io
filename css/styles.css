@@ -1,3 +1,7 @@
+@import 'https://fonts.googleapis.com/css?family=Oswald:300';
+@import '../fts/dk_poison_ivy.otf';
+
+
 *{
 	box-sizing: border-box;
 }
@@ -9,7 +13,6 @@ html{
 body{
 	height: 100%;
 	width: 100%;
-	background-image: url(../pic/q1_luisa.gif);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -17,13 +20,13 @@ body{
 	background-attachment: fixed;
 }
 
-/*@font-face {
-  font-family: DKpoisonIvy;
-  src: url(../fts/DK_Poison_Ivy.otf);
-}*/
 
 h1{
 	color: #d95350;
+	font-size: 3em;
+	font-weight: bold;
+	font-family: 'DK Poison Ivy', sans-serif;
+
 }
 
 .div-text-container{
@@ -37,7 +40,8 @@ h1{
 
 .descripcion-quiz{
 	color: #fff;
-	font-family: 'Eagle book';
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.3em;
 	background-color: #000;
 	border-radius: 1%;
 	/* Clases adicionales */
@@ -70,4 +74,8 @@ h1{
 .btn-claro{
 
 	background-color: #d95350; 
+}
+
+a{
+	color: #FFF;
 }
