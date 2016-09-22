@@ -16,6 +16,7 @@
 	<!--<link  rel="stylesheet" type="text/css" href="css/styles_index.css">-->
 </head>
 <body>
+
 <script>
   window.fbAsyncInit = function() {
     FB.init({
@@ -32,7 +33,7 @@
 	  if (response.status == 'connected') {
 	    FB.api('/me?fields=first_name', function(data) {
 	      var welcomeBlock = document.getElementById('fb-welcome');
-	      welcomeBlock.innerHTML = 'Conoce que tan maquiavélico eres, ' + data.first_name + '!';
+	      welcomeBlock.innerHTML = 'Conoces tu personalidad, ' + data.first_name + '?';
 	    });
 	  }
 	}
@@ -72,9 +73,14 @@
   js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.7&appId=725806384225748";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+
+
 <div id="fb-boton">
-<div class="btn btn-block fb-share-button" data-href="https://lahermandad.github.io/" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flahermandad.github.io%2F&amp;src=sdkpreparse">Compartir</a></div>
+<div class="btn btn-block fb-share-button" data-href="https://lahermandad.github.io/" data-layout="button" data-size="large" data-mobile-iframe="true">
+	<a class="fb-xfbml-parse-ignore fb-s" type="icon_link" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flahermandad.github.io%2F&amp;src=sdkpreparse">Compartir</a>
 </div>
+</div>
+
 
 <div class="div_index">
  	<a href="quiz1.html">
