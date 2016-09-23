@@ -1,3 +1,9 @@
+@import 'https://fonts.googleapis.com/css?family=Oswald';
+
+@font-face {
+    font-family: "DK Poison Ivy";
+    src: url("../fts/dk_poison_ivy.woff") format('woff');
+}
 
 a {
   text-decoration: none;
@@ -8,7 +14,7 @@ body {
   margin: 0;
   color: white;
   background-color: black;
-  font-family: 'Pathway Gothic One', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 2rem;
   font-smoothing: antialiased;
   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
@@ -166,3 +172,18 @@ h2 {
     margin: 0;
     -webkit-user-select: none;
 }
+
+p{
+  font-family: 'DK Poison Ivy';
+  color: #d95350;
+}
+
+
+
+
+
+
+
+
+
+

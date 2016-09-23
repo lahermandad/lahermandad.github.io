@@ -1,5 +1,9 @@
 @import 'https://fonts.googleapis.com/css?family=Oswald:300';
-@import '../fts/dk_poison_ivy.otf';
+
+@font-face {
+    font-family: "DK Poison Ivy";
+    src: url("../fts/dk_poison_ivy.woff") format('woff');
+}
 
 
 *{
@@ -67,7 +71,7 @@ h1{
 }
 
 .fb-share-button{
-	background-color: #3b5998; 
+	background-color: #3b5998;
 
 }
 
@@ -78,4 +82,9 @@ h1{
 
 a{
 	color: #FFF;
+}
+
+.treinta{
+	width: 180px;
+	margin-top: 350px;
 }
