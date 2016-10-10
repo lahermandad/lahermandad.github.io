@@ -33,7 +33,7 @@
 			    FB.api('/me?fields=first_name', function(data) {
 			      var welcomeBlock = document.getElementById('fb-welcome');
 			      welcomeBlock.innerHTML =
-						'<p class="text-center"> '+ 'Conoce que tan maquiavélico eres, ' + data.first_name + '!</P>';
+						'<p class="text-center"> '+ 'Conoce cómo es tu personalidad, ' + data.first_name + '!</P>';
 			    });
 					<!--El chafa acaba aquí-->
 			  }
@@ -78,7 +78,7 @@
 			<div class="container-fluid">
 				<a href="quiz1.html"><h1 class="text-center">Da clic o tap aquí para empezar el quiz</h1></a>
 				<div id="fb-boton">
-				<div class="btn btn-block treinta center-block" data-href="https://lahermandad.github.io/" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flahermandad.github.io%2F&amp;src=sdkpreparse">Compartir en Facebook</a></div>
+				<div class="btn btn-block fb-share-button treinta center-block" data-href="https://lahermandad.github.io/" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flahermandad.github.io%2F&amp;src=sdkpreparse">Compartir en Facebook</a></div>
 				</div>
 
 
