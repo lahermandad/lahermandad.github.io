@@ -66,6 +66,11 @@ h1{
 	}
 }
 
+.fb-boton {
+	text-align: center;
+	width: 50%;
+}
+
 .actions-quiz{
 	padding: 20px 0px;
 }
