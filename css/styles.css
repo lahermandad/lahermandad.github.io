@@ -66,9 +66,9 @@ h1{
 	}
 }
 
-.fb-boton {
-	text-align: center;
-	width: 50%;
+#fb-boton {
+    width: 50%;
+    margin: 0 auto; 
 }
 
 .actions-quiz{
