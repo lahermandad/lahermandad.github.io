@@ -66,6 +66,11 @@ h1{
 	}
 }
 
+#fb-boton {
+    width: 50%;
+    margin: 0 auto;
+}
+
 .actions-quiz{
 	padding: 20px 0px;
 }
@@ -73,6 +78,13 @@ h1{
 .fb-share-button{
 	background-color: #3b5998;
 
+}
+
+.blanquito{
+	color: #FFF;
+}
+#fb-welcome{
+	color: #FFF;
 }
 
 .btn-claro{
@@ -87,4 +99,5 @@ a{
 .treinta{
 	width: 180px;
 	margin-top: 350px;
+	height: 50px
 }
