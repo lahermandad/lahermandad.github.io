@@ -1,5 +1,9 @@
 @import 'https://fonts.googleapis.com/css?family=Oswald:300';
-@import '../fts/dk_poison_ivy.otf';
+
+@font-face {
+    font-family: "DK Poison Ivy";
+    src: url("../fts/dk_poison_ivy.woff") format('woff');
+}
 
 
 *{
@@ -62,13 +66,25 @@ h1{
 	}
 }
 
+#fb-boton {
+    width: 50%;
+    margin: 0 auto;
+}
+
 .actions-quiz{
 	padding: 20px 0px;
 }
 
 .fb-share-button{
-	background-color: #3b5998; 
+	background-color: #3b5998;
 
+}
+
+.blanquito{
+	color: #FFF;
+}
+#fb-welcome{
+	color: #FFF;
 }
 
 .btn-claro{
@@ -78,4 +94,10 @@ h1{
 
 a{
 	color: #FFF;
+}
+
+.treinta{
+	width: 180px;
+	margin-top: 350px;
+	height: 50px
 }

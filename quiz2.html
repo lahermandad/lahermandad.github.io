@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>La hermandad- Conoce cómo es tu personalidad</title>
+
+    <link href="css/style2.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <!-- <audio autoplay loop id="player"> <source src="aud/Crypto.mp3" type="audio/mpeg"> </audio> -->
+
+    <!--First Image-->
+    <div class="div_main" id="div_pre" style="background-image:url('pic/q1_title.gif');">
+        <h2 id="txt_titulo">¿QUÉ ROL JUGARÍAS DENTRO DE LA <b>HERMANDAD</b>?</h2>
+    </div>
+
+    <!-- Pregunta 1 -->
+    <div class="div_main" id="div_intro" style="background-image:url('pic/q1_intro.gif');">
+        <div class="div-pregunta">
+            <div class="txt_top_left">
+                <h2 class="descripcion-quiz">Al encontrarte en un situación de peligro,<br>¿Cuál es tu reacción?</h2>
+            </div>
+        </div>
+        <div class="div-respuesta">
+            <div class="opc_div" onclick="cambiar_div('#div_intro','#div_a');">
+                <p><a href="#div_a">Pedir ayuda</a></p>
+            </div>
+            <div class="opc_div" onclick="cambiar_div('#div_intro','#div_b');">
+                <p><a href="#div_b">Salir corriendo</a>
+            </div>
+            <div class="opc_div" onclick="cambiar_div('#div_intro','#div_c');">
+                <p><a href="#div_c">Afrontar la situación</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- a -->
+    <div class="div_main" id="div_a" style="background-image:url('pic/q1_a.gif');">
+        <div class="div-pregunta">
+            <div class="txt_top_left">
+                <h2 class="descripcion-quiz">¿Perdonarías a quien te puso en esa situación de peligro?</h2>
+            </div>
+        </div>
+        <div class="div-respuesta">
+          <div class="opc_div" onclick="cambiar_div('#div_a','#div_aa');">
+            <p><a href="#div_aa">Sí, no soy rencoroso</a></p>
+          </div>
+          <div class="opc_div" onclick="cambiar_div('#div_a','#div_ab');">
+            <p><a href="#div_ab">Sí, el tiempo lo cobra todo</a></p>
+          </div>
+          <div class="opc_div" onclick="cambiar_div('#div_a','#div_ac');">
+            <p><a href="#div_ac">No y nunca lo haré</a></p>
+          </div>
+        </div>
+    </div>
+
+    <!--JavaScript-->
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/hermandadJS.js"></script>
+</body>
+
+</html>
