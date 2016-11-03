@@ -58,8 +58,8 @@ span{
   z-index: -1;
 }
 
-.div_main {	
-  display:none;
+.div_main {
+  display: none;
 }
 
 .txt_mid_center {
@@ -112,10 +112,10 @@ h2 {
   width: 80%;
   height: auto;
   text-align: left;
-  font-size: 1.75rem;  
+  font-size: 1.75rem;
 }
 .txt_situacion>h2{
-  font-size: 2rem;  
+  font-size: 2rem;
 }
 
 .img_personaje {
@@ -213,8 +213,8 @@ h2 {
   position: absolute;
   z-index: 1;
 }
-.btn-mas {  
-  border-radius: 4px; 
+.btn-mas {
+  border-radius: 4px;
   white-space: nowrap;
     font-size: 1.5rem;
     height: 28px;
