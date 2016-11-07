@@ -1,0 +1,114 @@
+@import 'https://fonts.googleapis.com/css?family=Oswald:300';
+
+@font-face {
+    font-family: "AkzidenzGroteskBQL";
+    src: url("../fts/AkzidenzGrotConBQ-Light.woff") format('woff');
+}
+
+@font-face {
+    font-family: "DK Poison Ivy";
+    src: url("../fts/dk_poison_ivy.woff") format('woff');
+}
+
+
+*{
+	box-sizing: border-box;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: #000;
+	background-attachment: fixed;
+}
+
+
+h1{
+	color: #d95350;
+	font-size: 3em;
+	font-weight: bold;
+	font-family: 'AkzidenzGroteskBQL', sans-serif;
+
+}
+
+.div-text-container{
+	margin: 0px;
+	padding: 0px;
+}
+
+.descripcion-quiz-container{
+	overflow: hidden;
+}
+
+.descripcion-quiz{
+	color: #fff;
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.3em;
+	background-color: #000;
+	border-radius: 1%;
+	/* Clases adicionales */
+	width: 400px;
+	float: right;
+	padding: 20px;
+	margin: 20px;
+	background-color: rgba(0,0,0, 0.5);
+	overflow: hidden;
+}
+
+.copy-hermandad{
+  font-size: 1.4em;
+}
+
+@media only screen and (max-width: 768px)
+{
+	.descripcion-quiz{
+		float: none;
+		width: auto;
+		margin-top: 50vh;
+	}
+}
+
+#fb-boton {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.actions-quiz{
+	padding: 20px 0px;
+}
+
+.fb-share-button{
+	background-color: #3b5998;
+
+}
+
+.blanquito{
+	color: #FFF;
+}
+#fb-welcome{
+	color: #FFF;
+}
+
+.btn-claro{
+
+	background-color: #d95350;
+}
+
+a{
+	color: #FFF;
+}
+
+.facebook-btn:hover{
+	color: #3b5998;
+}
+
+.share-btn:hover{
+	color: #d95350;
+}
