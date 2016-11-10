@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="description" content="La Hermandad. Una serie original de Claro Video. Quiz">
+	<meta name="author" content="CTIN">
+	<meta property="og:url" content="https://lahermandad.github.io/" />
+	<meta property="og:type" content="game" />
+	<meta property="og:title" content="Soy como Milena de La Hermandad y tu ¿conoces cómo es tu personalidad?" />
+	<meta property="og:image" content="https://lahermandad.github.io/pic/q1_luisa.jpg" />
+	<meta property="og:description" content="Soy una persona soñadora y fantaseo con el mundo ideal; sería capaz de cautivar a cualquiera, porque se el impacto que provoco en los demás." />
+	<title>Serías Milena</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css\style_pedro2.css">
+	<!-- Font Awesome Icons -->
+	<link rel="stylesheet" href="css/font-awesome.css">
+</head>
+
+<body style="background-image:url('pic/q1_milena.gif');">
+	<script>
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.7";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+	<!-- /FACEBOOK -->
+
+	<audio autoplay loop id="player">
+			<source src="aud/Theme.mp3" type="audio/mpeg">
+		</audio>
+	<div class="container-fluid">
+
+		<div class="row">
+			<div class="col-sm-12 descripcion-quiz-container">
+				<div class="descripcion-quiz">
+					<div class="row">
+						<div class="col-sm-12">
+							<h1 class="titulo-principal text-center">Serías Milena</h1>
+							<div class="copy-hermandad text-center">
+								<p>Eres una persona soñadora que por mucho tiempo ha idealizado una realidad diferente, pero al no poder lograrlo se empeña en fantasear con un mundo ideal.</p>
+							</div>
+							<br>
+							<div class="copy-descrip">
+								<p>Eres una persona cautivadora, te gusta sentirte deseable, pues sabes el impacto que provocas con tan solo aparecer en el lugar adecuado. Eres romántico y tu mayor sueño es poder llegar a ese mundo con el que tanto has fantaseado. Eres una persona
+									muy noble, pero sabes perfectamente lo que tienes y cómo usarlo a tu favor. Tu mayor miedo es no hacer realidad tus sueños.</p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-6 ">
+							<div class="facebook-btn pull-right">
+								<a class="facebook-btn" onclick='shareMilena();' target="_blank">
+									<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+								</a>
+							</div>
+						</div>
+						<div class="col-xs-6">
+							<div class="share-btn">
+								<a class="share-btn" href="http://lahermandad.clarovideo.com/">
+									<i class="fa fa-plus-square fa-2x" aria-hidden="true"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--JavaScript-->
+	<script src="js/jquery-3.1.0.min.js"></script>
+	<script src="js/hermandadJS.js"></script>
+</body>
+
+</html>
