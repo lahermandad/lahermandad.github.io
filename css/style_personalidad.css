@@ -20,7 +20,6 @@
 
     h2 {
         margin: 0;
-        font-size: 1.2em;
     }
 
     a {
@@ -97,8 +96,8 @@
     .opc_div :hover {
         color: /*#c1c6c4;*/
         red;
-        /*font-size: 1.45rem;
-        transform: translate(0%, -20%);*/
+        font-size: 1.45rem;
+        transform: translate(0%, -20%);
     }
 
     #txt_principal {
