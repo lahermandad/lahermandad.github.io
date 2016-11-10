@@ -13,22 +13,19 @@ body {
     background-color: #000;
     background-attachment: fixed;
     background-size: cover;
-    text-shadow: -1px 0 #696969, 0 1px #696969, 1px 0 #696969, 0 -0px #696969;
+    /*text-shadow: -1px 0 #696969, 0 1px #696969, 1px 0 #696969, 0 -0px #696969;*/
 }
 
 h1 {
     font-size: 2em;
     font-weight: bold;
     font-family: 'MyriadPro-Cond', sans-serif;
-    text-align: center;
-    margin: 35% 0 0 10%
 }
 
 .contenedor {
     min-height: 100%;
     height: auto !important;
     height: 100%;
-    margin: 0 auto -20px;
 }
 
 .text-index {
@@ -37,17 +34,13 @@ h1 {
     z-index: 1;
     color: #FFF;
     text-decoration: none;
+    position: fixed;
+    bottom: 0;
+    top: 75%;
 }
 
 a:hover {
-    color: red;
     text-decoration: none;
-}
-
-@media only screen and (max-width: 640px) {
-    h1 {
-        font-size: 1em;
-    }
 }
 
 .img-rotate {

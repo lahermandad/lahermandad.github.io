@@ -89,20 +89,26 @@
     }
 
     .opc_div {
-
         min-height: 50px;
-        
     }
 
     .opc_div :hover {
         color: #d95350;
-
     }
 
     #txt_principal {
         font-family: 'AkzidenzGroteskBQL';
         font-size: 2.5em;
         width: 100%;
+    }
+
+    .creditos {
+        position: fixed;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: #292929;
+        font-size: 0.25rem;
     }
 
     .img-rotate {
