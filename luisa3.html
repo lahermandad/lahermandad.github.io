@@ -5,15 +5,17 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
 	<meta name="description" content="La Hermandad. Una serie original de Claro Video. Quiz">
 	<meta name="author" content="CTIN">
-	<meta property="og:url" content="https://apps.facebook.com/725806384225748/" />
+	<meta property="og:url" content="https://lahermandad.github.io/" />
 	<meta property="og:type" content="game" />
 	<meta property="og:title" content="Soy como Luisa de La Hermandad y tu ¿conoces cómo es tu personalidad?" />
 	<meta property="og:image" content="https://lahermandad.github.io/pic/q1_luisa.jpg" />
 	<meta property="og:description" content="Soy una persona valiente, leal y noble. Sería capaz de poder combatir la corrupción en altas esferas de la política." />
-	<meta property="fb:app_id" content="725806384225748" />
+
 	<title>Serías Luisa</title>
+
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style_pedro2.css">
 	<!-- Font Awesome Icons -->
@@ -22,24 +24,12 @@
 </head>
 
 <body style="background-image:url('pic/q1_luisa.gif');">
-	<div id="fb-root"></div>
-	<script>
-		(function(d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) return;
-			js = d.createElement(s);
-			js.id = id;
-			js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.7";
-			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
-	</script>
-	<!-- /FACEBOOK -->
 
 	<audio autoplay loop id="player">
 			<source src="aud/Theme.mp3" type="audio/mpeg">
 		</audio>
-	<div class="container-fluid">
 
+	<div class="container-fluid">
 		<div class="row">
 			<div class="col-sm-12 descripcion-quiz-container">
 				<div class="descripcion-quiz">
@@ -81,6 +71,23 @@
 	<!--JavaScript-->
 	<script src="js/jquery-3.1.0.min.js"></script>
 	<script src="js/hermandadJS.js"></script>
+	<script type="text/javascript">
+		function shareLuisa() {
+			FB.ui({
+				method: 'share',
+				href: 'https://lahermandad.github.io/index_rol.html',
+				description: 'Soy una persona valiente, leal y noble. Sería capaz de poder combatir la corrupción en altas esferas de la política.',
+				title: 'Soy como Luisa de La Hermandad y tu ¿conoces cómo es tu personalidad?',
+				picture: 'https://lahermandad.github.io/pic/q1_luisa.jpg',
+			}, function(response) {
+				if (response && !response.error_message) {
+					$('#lb_msj').text('link posteado' + response.post_id);
+				} else {
+					$('#lb_msj').text('error ...');
+				}
+			});
+		}
+	</script>
 </body>
 
 </html>

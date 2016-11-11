@@ -1,10 +1,5 @@
 FrontEnd:
 
-- Agregar el resto de preguntas adoc al árbol de decisión __TODO__ [quiz_personalidad.html](quiz_personalidad.html)
-- Agregar el resto de preguntas adoc al árbol de decisión __TODO__ [quiz_muerte.html](quiz_muerte.html)
-- Ajustar imágen para ocupar todo __TODO__ [index_personalidad.html](index_personalidad.html)
-- Ajustar imágen para ocupar todo __TODO__ [index_rol.html](index_rol.html)
-- Ajustar imágen para ocupar todo __TODO__ [index_muerte.html](index_muerte.html)
 - Arreglar headers para Quiz Muerte __TODO__ [index_muerte.html](index_muerte.html)
 - Arreglar headers para Quiz Persoanalidad __TODO__ [index_personalidad.html](index_personalidad.html)
 - Arreglar headers para Quiz Rol __TODO__ [index_rol.html](index_rol.html)
@@ -13,8 +8,6 @@ FrontEnd:
 - HACER LOS RESPONSIVOS __TODO__ [css\style2.css](css\style2.css)
 - HACER LOS RESPONSIVOS __TODO__ [css\style_personalidad.css](css\style_personalidad.css)
 - Imágenes de este Quiz __TODO__ [quiz_muerte.html](quiz_muerte.html)
-- Meter imágen de rotación __TODO__ [index_muerte.html](index_muerte.html)
-- Meter imágen de rotación __TODO__ [index_rol.html](index_rol.html)
 - Ver si es necesario algún # __TODO__ [js\hermandadJS.js](js\hermandadJS.js)
 - Ajustar el tamaño de letra reponsivo en dispositivos
 - Función pasada por parámetros para el share de Facebook
