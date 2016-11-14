@@ -2,70 +2,61 @@
 <html>
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="description" content="La Hermandad. Una serie original de Claro Video. Quiz">
-	<meta name="author" content="CTIN">
-	<meta property="og:url" content="https://lahermandad.github.io/" />
-	<meta property="og:type" content="game.achievement" />
-	<meta property="og:title" content="Soy el Analista de La Hermandad y tu ¿conoces cómo es tu personalidad?" />
-	<meta property="og:image" content="https://lahermandad.github.io/pic/q2_c.jpg" />
-	<meta property="og:description" content="Soy un experto estratega y capitán, debido a mis grandes habilidades y asertividad." />
-	<title>Conoce tu personalidad</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css\style_pedro2.css">
-	<!-- Font Awesome Icons -->
-	<link rel="stylesheet" href="css/font-awesome.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- TODO: arreglar headers -->
+    <title></title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style_pedro2.css">
+
 </head>
 
-<body style="background-image:url('pic/q1_milena.gif');">
-	<audio autoplay loop id="player">
-			<source src="aud/Theme.mp3" type="audio/mpeg">
-		</audio>
-	<div class="container-fluid">
+<body style="background-image:url('Aquí va el path');">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 descripcion-quiz-container">
+                <div class="descripcion-quiz">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h1 class="titulo-principal text-center">Respuesta mayoría C </h1>
+                            <div class="copy-hermandad text-center">
+                                <p>Copy de la hermandad</p>
+                            </div>
+                            <br>
+                            <div class="copy-descrip">
+                                <p>Copy común</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6 ">
+                            <div class="facebook-btn pull-right">
+                                <a class="facebook-btn" onclick='shareStory();' target="_blank">
+                                    <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="share-btn">
+                                <a class="share-btn" href="http://lahermandad.clarovideo.com/">
+                                    <i class="fa fa-plus-square fa-2x" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-		<div class="row">
-			<div class="col-sm-12 descripcion-quiz-container">
-				<div class="descripcion-quiz">
-					<div class="row">
-						<div class="col-sm-12">
-							<h1 class="titulo-principal text-center">Serías el Analista</h1>
-							<div class="copy-hermandad text-center">
-								<p>Podrías ser un experto estratega y capitán, debido a tus grandes habilidades y asertividad. </p>
-							</div>
-							<br>
-							<div class="copy-descrip">
-								<p>Puedes llegar a ser una persona muy fiel y por lo tanto muy buen amigo, pero no consigues amigos con facilidad, esperas que ellos vengan a ti. También eres muy crítico,  autodisciplinado, y te gusta entregarte al sacrificio personal. Sueles ser muy depresivo y más pesimista que la persona promedio.</p>
-								<p>Eres respetado por todos tus compañeros, ya que infundes autoridad, aunque sin imponer tus decisiones, las cuales son generalmente acertadas. Eres un líder innato, amable y sobreprotector con tus seres queridos. Tus habilidades, fidelidad, disciplina y discreción, te llevarían a cumplir tareas claves para la subsistencia de La Hermandad.</p>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-6 ">
-							<div class="facebook-btn pull-right">
-								<!-- TODO: Cambiar Share a Analista -->
-								<a class="facebook-btn" onclick='shareMilena();' target="_blank">
-									<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
-								</a>
-							</div>
-						</div>
-						<div class="col-xs-6">
-							<div class="share-btn">
-								<a class="share-btn" href="http://lahermandad.clarovideo.com/">
-									<i class="fa fa-plus-square fa-2x" aria-hidden="true"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!--JavaScript-->
-	<script src="js/jquery-3.1.0.min.js"></script>
-	<script src="js/hermandadJS.js"></script>
+    <!--JavaScript-->
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/hermandadJS.js"></script>
 </body>
 
 </html>

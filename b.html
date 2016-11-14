@@ -2,73 +2,61 @@
 <html>
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="description" content="La Hermandad. Una serie original de Claro Video. Quiz">
-	<meta name="author" content="CTIN">
-	<meta property="og:url" content="https://lahermandad.github.io/" />
-	<meta property="og:type" content="game.achievement" />
-	<meta property="og:title" content="Soy el Jefe de La Hermandad y tu ¿conoces cómo es tu personalidad?" />
-	<meta property="og:image" content="https://lahermandad.github.io/pic/q2_b.jpg" />
-	<meta property="og:description" content="Soy el Jefe, no sólo de La Hermandad sino también del Poder Judicial del Godinato" />
-	<meta property="fb:app_id" content="725806384225748" />
-	<title>Conoce tu personalidad</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style_pedro2.css">
-	<!-- Font Awesome Icons -->
-	<link rel="stylesheet" href="css/font-awesome.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- TODO: arreglar headers -->
+    <title></title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style_pedro2.css">
 
 </head>
 
-<body style="background-image:url('pic/q1_luisa.gif');">
-	<div id="fb-root"></div>
-	<audio autoplay loop id="player">
-			<source src="aud/Theme.mp3" type="audio/mpeg">
-		</audio>
-	<div class="container-fluid">
+<body style="background-image:url('Aquí va el path');">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 descripcion-quiz-container">
+                <div class="descripcion-quiz">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h1 class="titulo-principal text-center">Respuesta mayoría B </h1>
+                            <div class="copy-hermandad text-center">
+                                <p>Copy de la hermandad</p>
+                            </div>
+                            <br>
+                            <div class="copy-descrip">
+                                <p>Copy común</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6 ">
+                            <div class="facebook-btn pull-right">
+                                <a class="facebook-btn" onclick='shareStory();' target="_blank">
+                                    <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="share-btn">
+                                <a class="share-btn" href="http://lahermandad.clarovideo.com/">
+                                    <i class="fa fa-plus-square fa-2x" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-		<div class="row">
-			<div class="col-sm-12 descripcion-quiz-container">
-				<div class="descripcion-quiz">
-					<div class="row">
-						<div class="col-sm-12">
-							<h1 class="titulo-principal text-center">Serías el Jefe</h1>
-							<div class="copy-hermandad text-center">
-								<p>Jugarías un papel muy importante al ser el Jefe, no sólo de La Hermandad sino también del Poder Judicial del Godinato.</p>
-							</div>
-							<br>
-							<div class="copy-descrip">
-								<p>Eres una persona vivaz, alegre y sabes cómo convencer a la gente. Tienes alta sensibilidad, y sueles ser extrovertido, pero con reservas. Te encanta la gente y no te gusta la soledad. Tu forma de ser te hace aparentar una mayor seguridad de la que en realidad tienes, y sueles tomar decisiones basadas en una reflexión muy profunda.</p>
-								<p>Eres un justiciero, altivo y cauteloso; lo cual te ha llevado a obtener un puesto de gran importancia y serías capaz de convencer a los demás de tomar tus ideales como propios; generando que actúen de acuerdo a tu sueño.</p>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-6 ">
-							<div class="facebook-btn pull-right">
-								<!-- TODO: Cambiar Share a jefe -->
-								<a class="facebook-btn" onclick='shareLuisa();' target="_blank">
-									<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
-								</a>
-							</div>
-						</div>
-						<div class="col-xs-6">
-							<div class="share-btn">
-								<a class="share-btn" href="http://lahermandad.clarovideo.com/">
-									<i class="fa fa-plus-square fa-2x" aria-hidden="true"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!--JavaScript-->
-	<script src="js/jquery-3.1.0.min.js"></script>
-	<script src="js/hermandadJS.js"></script>
+    <!--JavaScript-->
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/hermandadJS.js"></script>
 </body>
 
 </html>
