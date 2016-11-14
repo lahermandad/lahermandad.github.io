@@ -2,78 +2,61 @@
 <html>
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="La Hermandad. Una serie original de Claro Video. Quiz">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="author" content="CTIN">
-	<meta property="og:url" content="https://lahermandad.github.io/" />
-	<meta property="og:type" content="game.achievement" />
-	<meta property="og:title" content="Soy el chismoso de La Hermandad y tu ¿conoces cómo es tu personalidad?" />
-	<meta property="og:image" content="https://lahermandad.github.io/pic/q2_a.jpg" />
-	<meta property="og:description" content="Quien recibe información secreta y me encargo de ver que se ejecute." />
-	<meta property="fb:app_id" content="725806384225748" />
-	<title>Conoce tu personalidad</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style_pedro2.css">
-	<!-- Font Awesome Icons -->
-	<link rel="stylesheet" href="css/font-awesome.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- TODO: arreglar headers -->
+    <title></title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style_pedro2.css">
+
 </head>
 
-<body style="background-image:url('pic/q1_julio.gif');">
+<body style="background-image:url('Aquí va el path');">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 descripcion-quiz-container">
+                <div class="descripcion-quiz">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h1 class="titulo-principal text-center">Respuesta mayoría A </h1>
+                            <div class="copy-hermandad text-center">
+                                <p>Copy de la hermandad</p>
+                            </div>
+                            <br>
+                            <div class="copy-descrip">
+                                <p>Copy común</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6 ">
+                            <div class="facebook-btn pull-right">
+                                <a class="facebook-btn" onclick='shareStory();' target="_blank">
+                                    <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div class="share-btn">
+                                <a class="share-btn" href="http://lahermandad.clarovideo.com/">
+                                    <i class="fa fa-plus-square fa-2x" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-	<div id="fb-root"></div>
-
-	<audio autoplay loop id="player">
-			<source src="aud/Theme.mp3" type="audio/mpeg">
-		</audio>
-	<div class="container-fluid">
-
-		<div class="row">
-			<div class="col-sm-12 descripcion-quiz-container">
-				<div class="descripcion-quiz">
-					<div class="row">
-						<div class="col-sm-12">
-							<h1 class="titulo-principal text-center">Serías el chismoso</h1>
-							<div class="copy-hermandad text-center">
-								<p>Podrías ser la pieza clave entre El Jefe y los Godínez; al ser quien reciba información secreta y encargarte de ver que se ejecute.
-</p>
-							</div>
-							<br>
-							<div class="copy-descrip">
-<P>
-Por lo general no te disgustan las adversidades, por el contrario, tienden a alentarte. Eres determinado y no te rindes ante cualquier obstáculo (o chisme). Toda profesión que requiera liderazgo, motivación y productividad son ideales para ti. Es por estas características que podrías escalar rápidamente de rango dentro de puestos clave.
-</P>
-<P>
-También tienes tus debilidades,  puedes ser profundamente hostil. Tu explosividad puede ser muy peligrosa y sueles ser más insensible ante los problemas de los demás, no te gustan las lágrimas. Puedes llegar a ser cruel, cortante y sarcástico. </p>
-							</div>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-6 ">
-							<div class="facebook-btn pull-right">
-								<!-- TODO: Cambiar Share a Chismoso -->
-								<a class="facebook-btn" onclick='shareJulio();' target="_blank">
-									<i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
-								</a>
-							</div>
-						</div>
-						<div class="col-xs-6">
-							<div class="share-btn">
-								<a class="share-btn" href="http://lahermandad.clarovideo.com/">
-									<i class="fa fa-plus-square fa-2x" aria-hidden="true"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!--JavaScript-->
-	<script src="js/jquery-3.1.0.min.js"></script>
-	<script src="js/hermandadJS.js"></script>
+    <!--JavaScript-->
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/hermandadJS.js"></script>
 </body>
 
 </html>
