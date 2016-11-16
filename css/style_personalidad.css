@@ -20,7 +20,8 @@ html, body {
 
 h2 {
     margin: 0;
-    font-size: 1.2em;
+    margin-left: 10px;
+    font-size: 1em;
 }
 
 a {
@@ -81,7 +82,7 @@ a {
     text-align: left;
     margin-top: 0;
     padding-left: 10px;
-    font-size: 1.25rem;
+    font-size: 0.8rem;
     border-left: 4px solid red;
     flex: 1;
     display: flex;
@@ -91,7 +92,7 @@ a {
 
 .opc_div {
     color: #d95350;
-    min-height: 75px;
+    min-height: 5px;
 }
 
 .opc_div :hover {
@@ -135,4 +136,16 @@ a {
     .img-rotate {
         display: none;
     }
+}
+
+@media only screen and (min-width: 700px) {
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    .div-respuesta {
+        font-size: 1.25rem;
+    }
+
 }
