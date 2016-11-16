@@ -57,6 +57,25 @@
     <!--JavaScript-->
     <script src="js/jquery-3.1.0.min.js"></script>
     <script src="js/hermandadJS.js"></script>
+    <!--JavaScript local-->
+    <script type="text/javascript">
+        function shareB() {
+            FB.ui({
+                method: 'share',
+                href: 'https://lahermandad.github.io/index_personalidad.html',
+                // TODO: copy de enfermedad
+                description: 'MicroCopy',
+                title: 'Moriré por una enfermedad ¿Quieres saber como vas a morir?',
+                picture: 'https://lahermandad.github.io/pic/q3_enfermedad.jpg',
+            }, function(response) {
+                if (response && !response.error_message) {
+                    $('#lb_msj').text('link posteado' + response.post_id);
+                } else {
+                    $('#lb_msj').text('error ...');
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>

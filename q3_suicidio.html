@@ -36,7 +36,7 @@
                     <div class="row">
                         <div class="col-xs-6 ">
                             <div class="facebook-btn pull-right">
-                                <a class="facebook-btn" onclick='shareStory();' target="_blank">
+                                <a class="facebook-btn" onclick='shareSuicidio();' target="_blank">
                                     <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
                                 </a>
                             </div>
@@ -57,6 +57,25 @@
     <!--JavaScript-->
     <script src="js/jquery-3.1.0.min.js"></script>
     <script src="js/hermandadJS.js"></script>
+    <!--JavaScript local-->
+    <script type="text/javascript">
+        function shareSuicidio() {
+            FB.ui({
+                method: 'share',
+                href: 'https://lahermandad.github.io/index_muerte.html',
+                // TODO: copy de enfermedad
+                description: 'MicroCopy',
+                title: 'Moriré suicidándome. ¿Quieres saber como vas a morir?',
+                picture: 'https://lahermandad.github.io/pic/q3_suicidio.jpg',
+            }, function(response) {
+                if (response && !response.error_message) {
+                    $('#lb_msj').text('link posteado' + response.post_id);
+                } else {
+                    $('#lb_msj').text('error ...');
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
