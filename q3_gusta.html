@@ -16,20 +16,23 @@
 
 </head>
 
-<body style="background-image:url('Aquí va el path');">
+<!-- TODO: Imágen correcta para muerte gusta -->
+
+<body style="background-image:url('pic/quema01.jpg');">
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12 descripcion-quiz-container">
                 <div class="descripcion-quiz">
                     <div class="row">
                         <div class="col-sm-12">
-                            <h1 class="titulo-principal text-center"> En un accidente haciendo lo que te gusta</h1>
+                            <h1 class="titulo-principal text-center"> Morirás en un accidente haciendo lo que te gusta</h1>
                             <div class="copy-hermandad text-center">
-                                <p>Copy gusta de la hermandad</p>
+                                <p>Podrías morir disfrutando de aquello que te fascina realizar, ya que te gusta mezclarlo con diversión y emoción; lo cual te podría llevar a tu final, porque recuerda que las pasiones matan.</p>
                             </div>
                             <br>
                             <div class="copy-descrip">
-                                <p>Copy gusta de la hermandad </p>
+                                <p>Te encanta realizar actividades fuera de serie y peculiares, te llena de vida el saber que le das ese pequeño toque personal al momento de vivir lo que te gusta e incluso, que lleguen a ser riesgosas para sentirte vivo.
+                                    Pero deberías tener cuidado, ya que tus decisiones, por mínimas que parezcan podrían llevarte a un final en el que ya no podrás seguir gozando de lo que te encanta y todo mundo podría enterarse de tus pequeños gustos.</p>
                             </div>
                         </div>
                     </div>
@@ -64,9 +67,9 @@
                 method: 'share',
                 href: 'https://lahermandad.github.io/index_muerte.html',
                 // TODO: copy de enfermedad
-                description: 'MicroCopy',
+                description: 'Podrías morir disfrutando de aquello que te fascina realizar, ya que te gusta mezclarlo con diversión y emoción; lo cual te podría llevar a tu final, porque recuerda que las pasiones matan.',
                 title: 'Moriré haciendo lo que me gusta. ¿Quieres saber como vas a morir?',
-                picture: 'https://lahermandad.github.io/pic/q3_gusta.jpg',
+                picture: 'https://lahermandad.github.io/pic/q3_accidente.jpg',
             }, function(response) {
                 if (response && !response.error_message) {
                     $('#lb_msj').text('link posteado' + response.post_id);

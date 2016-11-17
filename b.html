@@ -16,27 +16,31 @@
 
 </head>
 
-<body style="background-image:url('Aquí va el path');">
+<!-- TODO: Imágen correcta para el Jefe -->
+
+<body style="background-image:url('pic/q2_09-1Autoritario.gif');">
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12 descripcion-quiz-container">
                 <div class="descripcion-quiz">
                     <div class="row">
                         <div class="col-sm-12">
-                            <h1 class="titulo-principal text-center">Respuesta mayoría B </h1>
+                            <h1 class="titulo-principal text-center">El Jefe</h1>
                             <div class="copy-hermandad text-center">
-                                <p>Copy de la hermandad</p>
+                                <p>Jugarías un papel muy importante al ser el Jefe, no sólo de La Hermandad sino también del Poder Judicial en cualquier Godinato.</p>
                             </div>
                             <br>
                             <div class="copy-descrip">
-                                <p>Copy común</p>
+                                <p>Eres una persona vivaz, alegre y sabes cómo convencer a la gente. Tienes alta sensibilidad, y sueles ser extrovertido, pero con reservas. Te encanta la gente y no te gusta la soledad. Tu forma de ser te hace aparentar una
+                                    mayor seguridad de la que en realidad tienes, y sueles tomar decisiones basadas en una reflexión muy profunda.</p>
+                                <p>Eres un justiciero, altivo y cauteloso; lo cual te ha llevado a obtener un puesto de gran importancia y serías capaz de convencer a los demás de tomar tus ideales como propios; generando que actúen de acuerdo a tu sueño.</p>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-xs-6 ">
                             <div class="facebook-btn pull-right">
-                                <a class="facebook-btn" onclick='shareStory();' target="_blank">
+                                <a class="facebook-btn" onclick='shareB();' target="_blank">
                                     <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
                                 </a>
                             </div>
@@ -63,10 +67,9 @@
             FB.ui({
                 method: 'share',
                 href: 'https://lahermandad.github.io/index_personalidad.html',
-                // TODO: copy de enfermedad
-                description: 'MicroCopy',
-                title: 'Moriré por una enfermedad ¿Quieres saber como vas a morir?',
-                picture: 'https://lahermandad.github.io/pic/q3_enfermedad.jpg',
+                description: 'Jugarías un papel muy importante al ser el Jefe, no sólo de La Hermandad sino también del Poder Judicial en cualquier Godinato.',
+                title: 'Soy el Jefe de la hermandad ¿Quieres saber cual es tu personalidad?',
+                picture: 'https://lahermandad.github.io/pic/q2_jefe.jpg',
             }, function(response) {
                 if (response && !response.error_message) {
                     $('#lb_msj').text('link posteado' + response.post_id);
