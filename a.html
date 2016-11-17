@@ -16,20 +16,24 @@
 
 </head>
 
-<body style="background-image:url('Aquí va el path');">
+<!-- TODO: Imágen correcta para el chismoso -->
+<body style="background-image:url('pic/q1_pedro.gif');">
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12 descripcion-quiz-container">
                 <div class="descripcion-quiz">
                     <div class="row">
                         <div class="col-sm-12">
-                            <h1 class="titulo-principal text-center">Respuesta mayoría A </h1>
+                            <h1 class="titulo-principal text-center">El Chismoso</h1>
                             <div class="copy-hermandad text-center">
-                                <p>Copy de la hermandad</p>
+                                <p>Podrías ser la pieza clave entre El Jefe y los Godínez; al ser quien reciba información secreta y encargarte de ver que se ejecute.</p>
                             </div>
                             <br>
                             <div class="copy-descrip">
-                                <p>Copy común</p>
+                                <p>Por lo general no te disgustan las adversidades, por el contrario, tienden a alentarte. Eres determinado y no te rindes ante cualquier obstáculo (o chisme). Toda profesión que requiera liderazgo, motivación y productividad
+                                    son ideales para ti. Es por estas características que podrías escalar rápidamente de rango dentro de puestos clave.</p>
+                                <p>También tienes tus debilidades, puedes ser profundamente hostil. Tu explosividad puede ser muy peligrosa y sueles ser más insensible ante los problemas de los demás, no te gustan las lágrimas. Puedes llegar a ser cruel,
+                                    cortante y sarcástico.</p>
                             </div>
                         </div>
                     </div>
@@ -63,10 +67,9 @@
             FB.ui({
                 method: 'share',
                 href: 'https://lahermandad.github.io/index_personalidad.html',
-                // TODO: copy de enfermedad
-                description: 'MicroCopy',
-                title: 'Moriré por una enfermedad ¿Quieres saber como vas a morir?',
-                picture: 'https://lahermandad.github.io/pic/q3_enfermedad.jpg',
+                description: 'Podrías ser la pieza clave entre El Jefe y los Godínez; al ser quien reciba información secreta y encargarte de ver que se ejecute.',
+                title: 'Soy el Chismoso de la hermandad ¿Quieres saber cual es tu personalidad?',
+                picture: 'https://lahermandad.github.io/pic/q2_chismoso.jpg',
             }, function(response) {
                 if (response && !response.error_message) {
                     $('#lb_msj').text('link posteado' + response.post_id);

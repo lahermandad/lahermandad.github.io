@@ -16,20 +16,22 @@
 
 </head>
 
-<body style="background-image:url('Aquí va el path');">
+<!-- TODO: Imágen correcta para el Mano Derecha -->
+<body style="background-image:url('pic/q1_b.gif');">
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12 descripcion-quiz-container">
                 <div class="descripcion-quiz">
                     <div class="row">
                         <div class="col-sm-12">
-                            <h1 class="titulo-principal text-center">Respuesta mayoría D </h1>
+                            <h1 class="titulo-principal text-center">La Mano Derecha</h1>
                             <div class="copy-hermandad text-center">
-                                <p>Copy de la hermandad</p>
+                                <p>Serías capaz de dirigir por completo al Godinato con éxito y lograr su cometido, eres la pieza oculta clave del movimiento.</p>
                             </div>
                             <br>
                             <div class="copy-descrip">
-                                <p>Copy común</p>
+                                <p>Pareciera que no te alterases nunca, y bajo tu personalidad, sueles experimentar más emociones de las que demuestras a los demás. Le agradas a las personas, tienes un sentido del humor natural y posees una capacidad especial para descubrir el lado débil de los demás. Rara vez demuestras tus sentimientos y procuras no involucrarte mucho con las actividades de los demás, pero cuando lo haces, lo puedes llegar a realizar con un grado alto de eficacia.</p>
+                                <p>Por todas tus habilidades y personalidad, eres la pieza oculta de la empresa, aquella que se maneja tan bien a espalda de los demás que al final cumple con su tarea de manera fría y eficaz. Debido a tu inteligencia, elocuencia y relaciones puedes llegar a uno de los puestos más altos.</p>
                             </div>
                         </div>
                     </div>
@@ -63,10 +65,9 @@
             FB.ui({
                 method: 'share',
                 href: 'https://lahermandad.github.io/index_personalidad.html',
-                // TODO: copy de enfermedad
-                description: 'MicroCopy',
-                title: 'Moriré por una enfermedad ¿Quieres saber como vas a morir?',
-                picture: 'https://lahermandad.github.io/pic/q3_enfermedad.jpg',
+                description: 'Serías capaz de dirigir por completo al Godinato con éxito y lograr su cometido, eres la pieza oculta clave del movimiento.',
+                title: 'Soy la Mano Derecha ¿Quieres saber cual es tu personalidad?',
+                picture: 'https://lahermandad.github.io/pic/q2_mano-derecha.jpg',
             }, function(response) {
                 if (response && !response.error_message) {
                     $('#lb_msj').text('link posteado' + response.post_id);

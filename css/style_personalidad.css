@@ -44,8 +44,6 @@ a {
     text-align: center;
     position: relative;
     top: 50%;
-    /* NOTE: CON EL TRANSFORM TERMINA DE CENTRAR EL OBJETO */
-    /*transform: translateY(-50%);*/
 }
 
 .txt_regular {

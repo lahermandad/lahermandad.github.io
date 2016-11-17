@@ -16,20 +16,24 @@
 
 </head>
 
-<body style="background-image:url('Aquí va el path');">
+<!-- TODO: Imágen correcta para el Analista -->
+<body style="background-image:url('pic/q2_02Culpa.gif');">
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12 descripcion-quiz-container">
                 <div class="descripcion-quiz">
                     <div class="row">
                         <div class="col-sm-12">
-                            <h1 class="titulo-principal text-center">Respuesta mayoría C </h1>
+                            <h1 class="titulo-principal text-center">El Analista</h1>
                             <div class="copy-hermandad text-center">
-                                <p>Copy de la hermandad</p>
+                                <p>Podrías ser un experto estratega y capitán, debido a tus grandes habilidades y asertividad.</p>
                             </div>
                             <br>
                             <div class="copy-descrip">
-                                <p>Copy común</p>
+                                <p>Puedes llegar a ser una persona muy fiel y por lo tanto muy buen amigo, pero no consigues amigos con facilidad, esperas que ellos vengan a ti. También eres muy crítico, autodisciplinado, y te gusta entregarte al sacrificio
+                                    personal. Sueles ser muy depresivo y más pesimista que la persona promedio.</p>
+                                <p>Eres respetado por todos tus compañeros, ya que infundes autoridad, aunque sin imponer tus decisiones, las cuales son generalmente acertadas. Eres un líder innato, amable y sobreprotector con tus seres queridos. Tus habilidades,
+                                    fidelidad, disciplina y discreción, te llevarían a cumplir tareas claves para la subsistencia de La Hermandad.</p>
                             </div>
                         </div>
                     </div>
@@ -63,10 +67,9 @@
             FB.ui({
                 method: 'share',
                 href: 'https://lahermandad.github.io/index_personalidad.html',
-                // TODO: copy de enfermedad
-                description: 'MicroCopy',
-                title: 'Moriré por una enfermedad ¿Quieres saber como vas a morir?',
-                picture: 'https://lahermandad.github.io/pic/q3_enfermedad.jpg',
+                description: 'Podrías ser un experto estratega y capitán, debido a tus grandes habilidades y asertividad.',
+                title: 'Tengo una personalidad Analista ¿Quieres saber cual es tu personalidad?',
+                picture: 'https://lahermandad.github.io/pic/q2_analista.jpg',
             }, function(response) {
                 if (response && !response.error_message) {
                     $('#lb_msj').text('link posteado' + response.post_id);
